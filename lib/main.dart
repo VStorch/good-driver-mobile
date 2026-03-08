@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:good_driver/features/map/map_feature.dart';
 import 'package:provider/provider.dart';
 import 'features/driving/data/datasources/sensor_datasource.dart';
 import 'features/driving/domain/services/driving_analyzer.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Good Driver',
-      home: DrivingDebugPage(),
+      home: MapFeature(), //DrivingDebugPage(),
     );
   }
 }
